@@ -112,7 +112,10 @@ const profilesInfo = profiles.map(({ network, url }) => {
 			hotkey: "ctrl+P",
 			section: "Actions",
 			handler: () => {
-				window.print();
+				const link = document.createElement('a');
+				link.href = '/public/Esclender-Lugo_CV_2024.es.pdf';
+				link.download = 'Esclender-Lugo_CV_2024.pdf';
+				link.click();
 			},
 		},
 		...data,

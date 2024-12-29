@@ -1,187 +1,115 @@
 {
   "basics": {
-    "name": "John Doe",
-    "label": "Junior Full Stack Developer",
-    "image": "/me_avatar.jpg",
-    "email": "john.doe@example.com",
-    "phone": "+1 555-555-5555",
-    "url": "https://johndoe.dev",
-    "summary": "Junior Full Stack Developer with a passion for building web applications. Currently seeking opportunities to further develop my skills in a professional setting.",
+    "name": "Esclender Lugo",
+    "label": "Desarrollador Full Stack Junior",
+    "image": "/esclender_avatar.jpg",
+    "email": "elesclenderlugo@gmail.com",
+    "phone": "+51 928 590 695",
+    "url": "https://esclenderlugo.lat",
+    "summary": "Actualmente estudiando la carrera de Desarrollo de software en el 6to Ciclo, soy una persona proactiva y orientada a los detalles, que siempre busca soluciones optimizadas mientras sigue las mejores prácticas, arquitecturas limpias y patrones de diseño en el desarrollo de software.",
     "theme": "default",
     "location": {
       "address": "",
-      "postalCode": "10001",
-      "city": "Auckland",
-      "countryCode": "NZ",
-      "region": "New Zealand"
+      "postalCode": "15108",
+      "city": "Lima",
+      "countryCode": "PE",
+      "region": "Peru"
     },
     "profiles": [
       {
         "network": "LinkedIn",
-        "username": "john-doe",
-        "url": "https://linkedin.com/in/john-doe"
-      },
-      {
-        "network": "X",
-        "username": "john-doe",
-        "url": "https://x.com/john-doe"
+        "username": "Esclender",
+        "url": "https://www.linkedin.com/in/esclender-lugo-9b3766232/"
       },
       {
         "network": "GitHub",
-        "username": "johndoe",
-        "url": "https://github.com/johndoe"
+        "username": "Esclender",
+        "url": "https://github.com/Esclender"
       }
     ]
   },
   "work": [
     {
-      "name": "Tech Startup",
-      "position": "Junior Web Developer",
-      "location_type": "On site",
-      "location": "Auckland, New Zealand",
-      "url": "https://techstartup.com",
-      "startDate": "2024-01-01",
-      "endDate": null,
-      "summary": "Developing and maintaining web applications using JavaScript, HTML, and CSS. Collaborating with the team to implement new features and fix bugs.",
+      "name": "MotionPulse",
+      "position": "Practicante desarrollador",
+      "location_type": "Remoto",
+      "location": "Lima, Peru",
+      "url": "https://www.motionpulse.net/",
+      "startDate": "2023-01-08",
+      "endDate": "2024-01-04",
+      "summary": "Sistema de gestión de fotografía, cuyo propósito es que los administradores habiliten el acceso a sus usuarios a diferentes galerías y gestionen los recursos utilizados por la plataforma, esto de acuerdo con la cantidad de galerías creadas por los administradores. También incluye galerías de realidad aumentada para acceder a videos únicos de las fotos personalizadas de los clientes.",
       "highlights": [
-        "Improved website performance by optimizing code"
+        "Realice una refactorizacion del codigo de la pagina web de la empresa, eliminando modulos inncesarios."
       ],
       "responsibilities": [
-        "Collaborated with senior developers to design and implement web applications using modern JavaScript frameworks.",
-        "Assisted in debugging and optimizing front-end code to ensure smooth user experiences.",
-        "Participated in code reviews and contributed to improving coding standards within the team."
+        "Documentar cambios de implementaciones realizadas en los diferentes proyectos en desarrollo, utilizando jira y postman.",
+        "Analizar documentos de requerimientos y diseñar planes de accion para el desarrollo de estos dentro de los proyectos correspondientes, siempre respetando fechas de entregables. "
       ],
       "achievements": [
-        "Developing and maintaining web applications using JavaScript, HTML, and CSS. Collaborating with the team to implement new features and fix bugs."
+        "Optimice en un 30% la eficiencia de la pagina web de la empresa, reduciendo procesos innecesarios en el código fuente.",
+        "Apoye en el cumplimiento de plazos de entrega para múltiples proyectos, mediante revisiones exhaustivas de los requerimientos y su correspondiente implementación tanto en Front-end como Backend."
       ],
       "skills": [
         "React",
-        "Tailwind",
+        "Next",
+        "Express",
+        "Node",
+        "CSS",
         "GitHub"
-      ]
-    },
-    {
-      "name": "Innovative Solutions",
-      "position": "Junior Software Developer",
-      "location_type": "Hybrid",
-      "location": "Wellington, New Zealand",
-      "url": "https://innovativesolutions.com",
-      "startDate": "2022-06-01",
-      "endDate": "2023-06-01",
-      "summary": "Assisting in the development and maintenance of software applications using Python and Django. Collaborating with cross-functional teams to ensure quality and timely delivery of software solutions.",
-      "highlights": [
-        "Contributed to a major project that streamlined internal workflows, improving efficiency by 30%"
-      ],
-      "responsibilities": [
-        "Developed and maintained backend services using Python and Django.",
-        "Worked closely with front-end developers to integrate user-facing elements with server-side logic.",
-        "Participated in daily stand-ups and bi-weekly sprint planning meetings to ensure alignment with project goals."
-      ],
-      "achievements": [
-        "Successfully implemented a feature that enhanced user authentication, improving security measures."
-      ],
-      "skills": [
-        "Python",
-        "Django",
-        "SQL",
-        "Git"
-      ]
-    },
-    {
-      "name": "Web Agency",
-      "position": "Intern Web Developer",
-      "location_type": "Remote",
-      "location": "Sydney, Australia",
-      "startDate": "2022-06-01",
-      "endDate": "2022-12-01",
-      "summary": "Assisted in developing client websites and applications. Gained hands-on experience with front-end and back-end technologies.",
-      "highlights": [
-        "Completed several client projects successfully"
-      ],
-      "skills": [
-        "HTML",
-        "CSS"
       ]
     }
   ],
   "volunteer": [
-    {
-      "organization": "Local Coding Club",
-      "position": "Volunteer",
-      "url": "https://codingclub.com/",
-      "startDate": "2021-01-01",
-      "endDate": "2022-01-01",
-      "summary": "Helped organize coding workshops and mentored new members.",
-      "highlights": [
-        "Awarded 'Volunteer of the Month'"
-      ]
-    }
+    
   ],
   "education": [
     {
-      "institution": "State University",
-      "url": "https://stateuniversity.edu",
-      "area": "Computer Science",
-      "studyType": "Bachelor",
-      "startDate": "2018-09-01",
-      "endDate": "2022-05-01",
-      "score": "3.8",
+      "institution": "CERTUS",
+      "url": "https://www.certus.edu.pe/",
+      "area": "Diseño y Desarrollo Web",
+      "studyType": "Tecnico profesional",
+      "startDate": "2022-03-01",
+      "endDate": "2025-06-01",
+      "score": "",
       "courses": [
-        "CS101 - Introduction to Computer Science",
-        "CS102 - Data Structures"
-      ]
-    },
-    {
-      "institution": "Tech Institute",
-      "url": "https://techinstitute.edu",
-      "area": "Software Engineering",
-      "studyType": "Master",
-      "startDate": "2020-09-01",
-      "endDate": "2022-12-01",
-      "score": "3.9",
-      "courses": [
-        "SE201 - Advanced Software Development",
-        "SE202 - Software Architecture and Design"
-      ]
-    },
-    {
-      "institution": "City College",
-      "url": "https://citycollege.edu",
-      "area": "Information Technology",
-      "studyType": "Associate Degree",
-      "startDate": "2017-01-01",
-      "endDate": "2019-12-01",
-      "score": "3.7",
-      "courses": [
-        "IT101 - Networking Fundamentals",
-        "IT102 - Database Management Systems"
       ]
     }
   ],
   "certificates": [
     {
-      "name": "Full Stack Web Development",
-      "date": "2023-05-01",
-      "issuer": "Online University",
-      "url": "https://onlineuniversity.com/certificates/fullstack"
+      "name": "Academy Accreditation - Databricks Fundamentals",
+      "date": "2024-07-01",
+      "issuer": "Databricks",
+      "url": "https://credentials.databricks.com/2e1532eb-a33d-467f-a91b-695e0502fc12#acc.uts2YSi5"
     }
   ],
   "skills": [
     {
-      "name": "Figma",
-      "level": "Expert",
+      "name": "Python",
+      "level": "Intermediate",
       "keywords": [
-        "Design",
-        "UI"
+        "Backend",
+        "Web Development",
+        "Data Science",
+        "Automation"
       ]
     },
     {
-      "name": "Gitlab",
+      "name": "Java",
       "level": "Intermediate",
       "keywords": [
-        "Version Control",
-        "Collaboration",
-        "Source Code"
+        "Backend",
+        "Web Development",
+        "Android Development"
+      ]
+    },
+    {
+      "name": "Flutter",
+      "level": "Intermediate",
+      "keywords": [
+        "Mobile Development",
+        "Android",
+        "iOS"
       ]
     },
     {
@@ -294,12 +222,12 @@
   ],
   "languages": [
     {
-      "language": "English",
-      "fluency": "Native speaker"
+      "language": "Ingles",
+      "fluency": "Intermedio"
     },
     {
-      "language": "Spanish",
-      "fluency": "Intermediate"
+      "language": "Español",
+      "fluency": "Nativo"
     }
   ],
   "interests": [
@@ -312,53 +240,8 @@
     }
   ],
   "references": [
-    {
-      "name": "Jane Smith",
-      "reference": "Reference…"
-    }
   ],
   "projects": [
-    {
-      "name": "Personal Portfolio",
-      "isActive": false,
-      "description": "A personal portfolio website to showcase my projects and skills.",
-      "highlights": [
-        "Built with React and Tailwind CSS",
-        "Includes a blog and contact form"
-      ],
-      "url": "https://johndoe.dev",
-      "github": "https://github.com"
-    },
-    {
-      "name": "Weather App",
-      "isActive": true,
-      "description": "A web application that provides weather information for any location.",
-      "highlights": [
-        "Built with JavaScript and OpenWeatherMap API",
-        "Responsive design"
-      ],
-      "url": "https://weatherapp.com"
-    },
-    {
-      "name": "Task Manager",
-      "isActive": true,
-      "description": "A simple task management app to keep track of daily tasks.",
-      "highlights": [
-        "Built with Node.js and MongoDB",
-        "User authentication and CRUD operations"
-      ],
-      "url": "https://taskmanager.com",
-      "github": "https://github.com"
-    },
-    {
-      "name": "E-commerce Site",
-      "isActive": false,
-      "description": "An online store built with Next.js and Stripe for payment processing.",
-      "highlights": [
-        "Product management and shopping cart functionality",
-        "Secure payment integration"
-      ],
-      "url": "https://ecommerce.com"
-    }
+
   ]
 }
