@@ -242,6 +242,16 @@
   "references": [
   ],
   "projects": [
-
+    {
+      "name": "Paises WebApp",
+      "isActive": false,
+      "description": "Paises WebApp es una aplicación web que permite buscar información de paises, como su capital, población, moneda, idioma, entre otros. La aplicación consume una API de paises y se construyó con Vue Composition Api y Bootstrap 5.",
+      "highlights": [
+        "Construido con Vue Composition Api Y Bostrap 5",
+        "Integrado con Graphql para consultas a la API"
+      ],
+      "url": "https://paises-api-five.vercel.app/",
+      "github": "https://github.com/Esclender/paisesApi"
+    }
   ]
 }
