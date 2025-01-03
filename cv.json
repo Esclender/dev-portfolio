@@ -244,14 +244,29 @@
   "projects": [
     {
       "name": "Paises WebApp",
-      "isActive": false,
+      "isActive": true,
       "description": "Paises WebApp es una aplicación web que permite buscar información de paises, como su capital, población, moneda, idioma, entre otros. La aplicación consume una API de paises y se construyó con Vue Composition Api y Bootstrap 5.",
       "highlights": [
         "Construido con Vue Composition Api Y Bostrap 5",
-        "Integrado con Graphql para consultas a la API"
+        "Integrado con Graphql para consultas a la API",
+        "Caching de datos mediante key-values convencionales"
       ],
       "url": "https://paises-api-five.vercel.app/",
       "github": "https://github.com/Esclender/paisesApi"
+    },
+    {
+      "name": "Challenge doctums",
+      "isActive": false,
+      "description": "Proyecto Ganador del desafio Doctums donde participaron mas de 20 equipos, este es un juego construido como un simulador educativo, para que por medio de un modelo de negocio B2B, instituciones educativas puedieran hacer uso de este software para incuirlo como herramientas para sus diferentes carreras de manera que los estudiantes puedan enfrentarse a situaciones (desafios, retos) que podran ver en el ambito laboral.",
+      "highlights": [
+        "Construido utilizando Remix como framework",
+        "Phaser.js como libreria para la creacion de juegos",
+        "Aplicacion de Singletones",
+        "Implementacion del Real-time con WebSockets",
+        "Python con FastAPI para el Backend"
+      ],
+      "url": "",
+      "github": "https://github.com/Gonzagut99/challenge-doctums-front-v1"
     }
   ]
 }
