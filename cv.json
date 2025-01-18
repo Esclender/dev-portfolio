@@ -255,18 +255,27 @@
       "github": "https://github.com/Esclender/paisesApi"
     },
     {
-      "name": "Challenge doctums",
+      "name": "Challenge doctums - Frontend",
       "isActive": false,
       "description": "Proyecto Ganador del desafio Doctums donde participaron mas de 20 equipos, este es un juego construido como un simulador educativo, para que por medio de un modelo de negocio B2B, instituciones educativas puedieran hacer uso de este software para incuirlo como herramientas para sus diferentes carreras de manera que los estudiantes puedan enfrentarse a situaciones (desafios, retos) que podran ver en el ambito laboral.",
       "highlights": [
         "Construido utilizando Remix como framework",
-        "Phaser.js como libreria para la creacion de juegos",
-        "Aplicacion de Singletones",
-        "Implementacion del Real-time con WebSockets",
-        "Python con FastAPI para el Backend"
+        "Phaser.js como libreria para la creacion de juegos"
       ],
       "url": "",
       "github": "https://github.com/Gonzagut99/challenge-doctums-front-v1"
+    },
+    {
+      "name": "Challenge doctums - Backend",
+      "isActive": false,
+      "description": "Este es el backend desarrollado para el proyecto ganador del desafio Doctums, este backend se encarga de manejar peticiones HTTP y WebSockets, de manera que mediante el uso de FastAPI se logra una comunicacion en tiempo real con el frontend, este se encargara de manejar la creacion de salas mediante el uso del patron de diseño Abstract Factory, donde cada sala contara con un dispatcher que manejara todas las acciones que sean enviadas desde el la interfaz de juego.",
+      "highlights": [
+        "Implementacion del Real-time con WebSockets",
+        "Python con FastAPI para el Backend",
+        "Aplicacion de Singletones"
+      ],
+      "url": "",
+      "github": "https://github.com/Gonzagut99/doctums-challenge-API-server"
     }
   ]
 }
