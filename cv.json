@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "Esclender Lugo",
-    "label": "Desarrollador Full Stack Junior",
+    "label": "Desarrollador de Software Backend & DevOps",
     "image": "/esclender_avatar.jpeg",
     "email": "elesclenderlugo@gmail.com",
     "phone": "+51 928 590 695",
     "url": "https://esclenderlugo.lat",
-    "summary": "Actualmente estudiando la carrera de Desarrollo de software en el 6to Ciclo, soy una persona proactiva y orientada a los detalles, que siempre busca soluciones optimizadas mientras sigue las mejores prácticas, arquitecturas limpias y patrones de diseño en el desarrollo de software.",
+    "summary": "Soy un Desarrollador de Software, especializado en Backend y DevOps. Me dedico a mantenerme siempre actualizado en las tecnologicas, tecnicas y recursos que vayan apareciendo en estas areas. Entusiasta Open source, siempre buscando proyectos en los que pueda contribuir. Además, tengo un gran interés en las últimas actualizaciones de modelos LLM y herramientas integradas con IA, considero que esto representara un gran cambio en la siguiente decada en lo que respecta el area de la tecnologia (mucho mas de lo que ya ha sido).",
     "theme": "default",
     "location": {
       "address": "",
@@ -35,19 +35,19 @@
       "location_type": "Remoto",
       "location": "Lima, Peru",
       "url": "https://www.motionpulse.net/",
-      "startDate": "2023-01-08",
-      "endDate": "2024-01-04",
+      "startDate": "2023-08-01",
+      "endDate": "2024-04-01",
       "summary": "Sistema de gestión de fotografía, cuyo propósito es que los administradores habiliten el acceso a sus usuarios a diferentes galerías y gestionen los recursos utilizados por la plataforma, esto de acuerdo con la cantidad de galerías creadas por los administradores. También incluye galerías de realidad aumentada para acceder a videos únicos de las fotos personalizadas de los clientes.",
-      "highlights": [
-        "Realice una refactorizacion del codigo de la pagina web de la empresa, eliminando modulos inncesarios."
-      ],
+      "highlights": [],
       "responsibilities": [
-        "Documentar cambios de implementaciones realizadas en los diferentes proyectos en desarrollo, utilizando jira y postman.",
-        "Analizar documentos de requerimientos y diseñar planes de accion para el desarrollo de estos dentro de los proyectos correspondientes, siempre respetando fechas de entregables. "
+        "Documentación de cambios de implementaciones realizadas en los diferentes proyectos en desarrollo, utilizando Jira y Postman.",
+        "Análisis de requerimientos y diseño de planes de acción para el desarrollo de proyectos, asegurando el cumplimiento de entregables."
       ],
       "achievements": [
-        "Optimice en un 30% la eficiencia de la pagina web de la empresa, reduciendo procesos innecesarios en el código fuente.",
-        "Apoye en el cumplimiento de plazos de entrega para múltiples proyectos, mediante revisiones exhaustivas de los requerimientos y su correspondiente implementación tanto en Front-end como Backend."
+        "Optimicé en un 30% la eficiencia de la página web de la empresa, reduciendo procesos innecesarios en el código fuente.",
+        "Apoyé en el cumplimiento de plazos de entrega para múltiples proyectos, mediante revisiones exhaustivas de los requerimientos y su correspondiente implementación tanto en Front-end como Backend.",
+        "Implementé librerías internas para reemplazar dependencias externas desactualizadas, resolviendo conflictos de versiones, eliminando la tercerización de funcionalidades y mejorando la estabilidad de múltiples proyectos.",
+        "Diseñé estas nuevas librerías para ser escalables e integrables, adaptándose a funcionalidades específicas por proyecto, facilitando el mantenimiento y mejorando la eficiencia a largo plazo."
       ],
       "skills": [
         "React",
@@ -60,13 +60,17 @@
     }
   ],
   "volunteer": [
-    
+    {
+      "organization": "Iniciativa Wayllu",
+      "position": "Desarrollador TI",
+      "summary": "Wayllu fue una aplicación institucional, cuyo trabajo resultó en la creación de una aplicación para ayudar a los artesanos de Ollantaytambo (Cusco, Perú) a la gestión de sus inventarios de productos. Contribuí en el diseño y desarrollo del módulo de inventario utilizando Node.js y MongoDB."
+    }
   ],
   "education": [
     {
       "institution": "CERTUS",
       "url": "https://www.certus.edu.pe/",
-      "area": "Diseño y Desarrollo Web",
+      "area": "Diseño y Desarrollo de Software",
       "studyType": "Tecnico profesional",
       "startDate": "2022-03-01",
       "endDate": "2025-06-01",
@@ -83,143 +87,7 @@
       "url": "https://credentials.databricks.com/2e1532eb-a33d-467f-a91b-695e0502fc12#acc.uts2YSi5"
     }
   ],
-  "skills": [
-    {
-      "name": "Python",
-      "level": "Intermediate",
-      "keywords": [
-        "Backend",
-        "Web Development",
-        "Data Science",
-        "Automation"
-      ]
-    },
-    {
-      "name": "Java",
-      "level": "Intermediate",
-      "keywords": [
-        "Backend",
-        "Web Development",
-        "Android Development"
-      ]
-    },
-    {
-      "name": "Flutter",
-      "level": "Intermediate",
-      "keywords": [
-        "Mobile Development",
-        "Android",
-        "iOS"
-      ]
-    },
-    {
-      "name": "HTML",
-      "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Frontend"
-      ]
-    },
-    {
-      "name": "CSS",
-      "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Frontend",
-        "Responsive Design"
-      ]
-    },
-    {
-      "name": "JavaScript",
-      "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Frontend",
-        "Backend",
-        "Fullstack"
-      ]
-    },
-    {
-      "name": "Tailwind",
-      "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Frontend",
-        "CSS Framework",
-        "Responsive Design"
-      ]
-    },
-    {
-      "name": "TypeScript",
-      "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Frontend",
-        "Backend",
-        "JavaScript Superset"
-      ]
-    },
-    {
-      "name": "Node",
-      "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Backend",
-        "JavaScript",
-        "Server"
-      ]
-    },
-    {
-      "name": "MySQL",
-      "level": "Intermediate",
-      "keywords": [
-        "Databases",
-        "SQL",
-        "Data Storage",
-        "Backend"
-      ]
-    },
-    {
-      "name": "Git",
-      "level": "Intermediate",
-      "keywords": [
-        "Version Control",
-        "Collaboration",
-        "Source Code"
-      ]
-    },
-    {
-      "name": "GitHub",
-      "level": "Intermediate",
-      "keywords": [
-        "Version Control",
-        "Collaboration",
-        "Source Code",
-        "Git"
-      ]
-    },
-    {
-      "name": "Next.js",
-      "level": "Beginner",
-      "keywords": [
-        "Web Development",
-        "Frontend",
-        "React Framework",
-        "SSR",
-        "Static Generation"
-      ]
-    },
-    {
-      "name": "React",
-      "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Frontend",
-        "JavaScript Library",
-        "UI"
-      ]
-    }
-  ],
+  "skills": [],
   "languages": [
     {
       "language": "Ingles",
@@ -242,28 +110,19 @@
   "references": [
   ],
   "projects": [
+    
+  ],
+  "customSections": [
     {
       "name": "Challenge doctums - Frontend",
       "isActive": false,
-      "description": "Proyecto Ganador del desafio Doctums donde participaron mas de 20 equipos, este es un juego construido como un simulador educativo, para que por medio de un modelo de negocio B2B, instituciones educativas puedieran hacer uso de este software para incuirlo como herramientas para sus diferentes carreras de manera que los estudiantes puedan enfrentarse a situaciones (desafios, retos) que podran ver en el ambito laboral.",
+      "description": "Proyecto ganador del desafío Doctums, donde participaron más de 20 equipos. El proyecto era un sistema para gestionar un centro de idiomas, que sirve como plataforma para la enseñanza y el aprendizaje. Con este proyecto, pudimos hacer uso de este software para recrear como herramientas para las diferentes carreras de una universidad y generar diferentes escenarios a situaciones casuales, retos que podían ver en el día a día.",
       "highlights": [
         "Construido utilizando Remix como framework",
-        "Phaser.js como libreria para la creacion de juegos"
+        "Pusimos como librería para la creación de juegos."
       ],
       "url": "",
       "github": "https://github.com/Gonzagut99/challenge-doctums-front-v1"
-    },
-    {
-      "name": "Challenge doctums - Backend",
-      "isActive": false,
-      "description": "Este es el backend desarrollado para el proyecto ganador del desafio Doctums, este backend se encarga de manejar peticiones HTTP y WebSockets, de manera que mediante el uso de FastAPI se logra una comunicacion en tiempo real con el frontend, este se encargara de manejar la creacion de salas mediante el uso del patron de diseño Abstract Factory, donde cada sala contara con un dispatcher que manejara todas las acciones que sean enviadas desde el la interfaz de juego.",
-      "highlights": [
-        "Implementacion del Real-time con WebSockets",
-        "Python con FastAPI para el Backend",
-        "Aplicacion de Singletones"
-      ],
-      "url": "",
-      "github": "https://github.com/Gonzagut99/doctums-challenge-API-server"
     }
   ]
 }
