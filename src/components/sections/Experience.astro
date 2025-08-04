@@ -1,6 +1,5 @@
 ---
 import Section from "../Section.astro"
-import { work } from "@cv"
 
 import HTML from "@/icons/html.astro"
 import CSS from "@/icons/css.astro"
@@ -18,6 +17,11 @@ import SwiftUI from "@/icons/swiftui.astro"
 import Kotlin from "@/icons/kotlin.astro"
 import Flutter from "@/icons/flutter.astro"
 import Express from "@/icons/express.astro"
+
+// Get translation data from Astro.locals
+const translation = Astro.locals.translation;
+const { work } = translation;
+const { experience } = translation.ui.sections;
 
 const SKILLS_ICONS: Record<string, any> = {
   HTML,
@@ -38,7 +42,7 @@ const SKILLS_ICONS: Record<string, any> = {
   Flutter,
 }
 ---
-<Section className={Astro.props.className} title="Experiencia">
+<Section className={Astro.props.className} title={experience}>
   <ul class="flex flex-col">
     {work.map(({ name, startDate, endDate, position, summary, responsibilities, achievements, url, skills, location, location_type }) => {
       const startYear = new Date(startDate).getFullYear()

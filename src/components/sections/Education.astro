@@ -1,11 +1,13 @@
 ---
 import Section from "../Section.astro";
 
-import { education } from "@cv";
-import { certificates } from "@cv";
+// Get translation data from Astro.locals
+const translation = Astro.locals.translation;
+const { education, certificates } = translation;
+const { education: educationTitle, certificates: certificatesTitle } = translation.ui.sections;
 ---
 
-<Section className={Astro.props.className} title="Educacion">
+<Section className={Astro.props.className} title={educationTitle}>
 	<ul class="space-y-4 py-3 print:space-y-0">
 		{
 			education.map(({ institution, startDate, endDate, area, url }) => {
@@ -38,7 +40,7 @@ import { certificates } from "@cv";
 	{
 		certificates.length > 0 && (
 			<>
-				<h4>Certificaciones</h4>
+				<h4>{certificatesTitle}</h4>
 				<ul class="space-y-4 py-3 print:space-y-0">
 					{certificates.map(({ name, date, issuer, url }) => {
 						const certificateYear = new Date(date).getFullYear();

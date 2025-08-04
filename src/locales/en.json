@@ -1,0 +1,141 @@
+{
+  "basics": {
+    "name": "Esclender Lugo",
+    "label": "Backend & DevOps Software Developer",
+    "image": "/esclender_avatar.jpeg",
+    "email": "elesclenderlugo@gmail.com",
+    "phone": "+51 928 590 695",
+    "url": "https://esclenderlugo.lat",
+    "summary": "I am a Software Developer, specialized in Backend and DevOps. I dedicate myself to staying always updated in the technologies, techniques and resources that appear in these areas. Open source enthusiast, always looking for projects where I can contribute. Additionally, I have a great interest in the latest LLM model updates and AI-integrated tools, I consider this will represent a great change in the next decade regarding the technology area (much more than it already has been).",
+    "theme": "default",
+    "location": {
+      "address": "",
+      "postalCode": "15108",
+      "city": "Lima",
+      "countryCode": "PE",
+      "region": "Peru"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "Esclender",
+        "url": "https://www.linkedin.com/in/esclender-lugo-9b3766232/"
+      },
+      {
+        "network": "GitHub",
+        "username": "Esclender",
+        "url": "https://github.com/Esclender"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "MotionPulse",
+      "position": "Developer Intern",
+      "location_type": "Remote",
+      "location": "Lima, Peru",
+      "url": "https://www.motionpulse.net/",
+      "startDate": "2023-08-01",
+      "endDate": "2024-04-01",
+      "summary": "Photography management system, whose purpose is for administrators to enable access for their users to different galleries and manage the resources used by the platform, according to the number of galleries created by administrators. It also includes augmented reality galleries to access unique videos of customized client photos.",
+      "highlights": [],
+      "responsibilities": [
+        "Documentation of implementation changes made in different projects under development, using Jira and Postman.",
+        "Requirements analysis and action plan design for project development, ensuring deliverable compliance."
+      ],
+      "achievements": [
+        "Optimized company website efficiency by 30%, reducing unnecessary processes in source code.",
+        "Supported meeting delivery deadlines for multiple projects through exhaustive review of requirements and their corresponding implementation in both Front-end and Backend.",
+        "Implemented internal libraries to replace outdated external dependencies, resolving version conflicts, eliminating third-party functionality and improving the stability of multiple projects.",
+        "Designed these new libraries to be scalable and integrable, adapting to project-specific functionalities, facilitating maintenance and improving long-term efficiency."
+      ],
+      "skills": [
+        "React",
+        "Next",
+        "Express",
+        "Node"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Wayllu Initiative",
+      "position": "IT Developer",
+      "summary": "Wayllu was an institutional application, whose work resulted in the creation of an application to help artisans from Ollantaytambo (Cusco, Peru) manage their product inventories. I contributed to the design and development of the inventory module using Node.js and MongoDB."
+    }
+  ],
+  "education": [
+    {
+      "institution": "CERTUS",
+      "url": "https://www.certus.edu.pe/",
+      "area": "Software Design and Development",
+      "studyType": "Professional Technical",
+      "startDate": "2022-03-01",
+      "endDate": "2025-06-01",
+      "score": "",
+      "courses": []
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Academy Accreditation - Databricks Fundamentals",
+      "date": "2024-07-01",
+      "issuer": "Databricks",
+      "url": "https://credentials.databricks.com/2e1532eb-a33d-467f-a91b-695e0502fc12#acc.uts2YSi5"
+    }
+  ],
+  "skills": [],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Intermediate"
+    },
+    {
+      "language": "Spanish",
+      "fluency": "Native"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Technology",
+      "keywords": [
+        "AI",
+        "Blockchain"
+      ]
+    }
+  ],
+  "references": [],
+  "projects": [],
+  "customSections": [
+    {
+      "name": "Challenge doctums - Frontend",
+      "isActive": false,
+      "description": "Winner project of the Doctums challenge, where more than 20 teams participated. The project was a system to manage a language center, which serves as a platform for teaching and learning. With this project, we were able to use this software to recreate as tools for different university careers and generate different scenarios for casual situations, challenges they could see in their daily lives.",
+      "highlights": [
+        "Built using Remix as framework",
+        "We put as library for game creation."
+      ],
+      "url": "",
+      "github": "https://github.com/Gonzagut99/challenge-doctums-front-v1"
+    }
+  ],
+  "ui": {
+    "sections": {
+      "about": "About",
+      "experience": "Experience",
+      "education": "Education",
+      "projects": "Projects",
+      "skills": "Skills",
+      "languages": "Languages",
+      "interests": "Interests",
+      "certificates": "Certificates"
+    },
+    "common": {
+      "visit": "Visit",
+      "profile": "profile",
+      "on": "on",
+      "copy": "Copy",
+      "copied": "Copied!"
+    }
+  }
+} 

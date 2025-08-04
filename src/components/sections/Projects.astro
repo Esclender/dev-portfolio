@@ -3,10 +3,13 @@ import Git from "@/icons/git.astro";
 import Arrow from "@/icons/Arrow.astro";
 import Section from "../Section.astro";
 
-import { projects } from "@cv";
+// Get translation data from Astro.locals
+const translation = Astro.locals.translation;
+const { projects } = translation;
+const { projects: projectsTitle } = translation.ui.sections;
 ---
 
-<Section className={Astro.props.className} title="Proyectos">
+<Section className={Astro.props.className} title={projectsTitle}>
 	<div class="grid grid-cols-1 gap-3 md:grid-cols-2 print:flex print:flex-col">
 		{
 			projects.map(({ url, description, highlights, name, isActive, github }) => {

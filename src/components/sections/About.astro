@@ -1,11 +1,13 @@
 ---
 import Section from "../Section.astro";
 
-import { basics } from "@cv";
-const { summary } = basics;
+// Get translation data from Astro.locals
+const translation = Astro.locals.translation;
+const { summary } = translation.basics;
+const { about } = translation.ui.sections;
 ---
 
-<Section title="Acerca">
+<Section title={about}>
 	<p>
 		{summary}
 	</p>

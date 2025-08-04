@@ -73,8 +73,7 @@
       "startDate": "2022-03-01",
       "endDate": "2025-06-01",
       "score": "",
-      "courses": [
-      ]
+      "courses": []
     }
   ],
   "certificates": [
@@ -105,11 +104,8 @@
       ]
     }
   ],
-  "references": [
-  ],
-  "projects": [
-    
-  ],
+  "references": [],
+  "projects": [],
   "customSections": [
     {
       "name": "Challenge doctums - Frontend",
@@ -122,5 +118,24 @@
       "url": "",
       "github": "https://github.com/Gonzagut99/challenge-doctums-front-v1"
     }
-  ]
-}
+  ],
+  "ui": {
+    "sections": {
+      "about": "Acerca",
+      "experience": "Experiencia",
+      "education": "Educación",
+      "projects": "Proyectos",
+      "skills": "Habilidades",
+      "languages": "Idiomas",
+      "interests": "Intereses",
+      "certificates": "Certificados"
+    },
+    "common": {
+      "visit": "Visitar",
+      "profile": "perfil",
+      "on": "en",
+      "copy": "Copiar",
+      "copied": "¡Copiado!"
+    }
+  }
+} 
