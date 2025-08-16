@@ -50,8 +50,8 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
 					profiles.map(({ network, url }) => {
 						const Icon = SOCIAL_ICONS[network];
 
-						return (
-							<a href={url} title={`Visit ${name} profile on ${network}`} target="_blank" rel="noopener noreferrer">
+                        return (
+                            <a href={url} title={translation.ui.common.visitProfileOnNetwork.replace('{name}', name).replace('{network}', network)} target="_blank" rel="noopener noreferrer">
 								<Icon />
 							</a>
 						);

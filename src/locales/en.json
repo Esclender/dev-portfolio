@@ -25,6 +25,11 @@
         "network": "GitHub",
         "username": "Esclender",
         "url": "https://github.com/Esclender"
+      },
+      {
+        "network": "X",
+        "username": "Esclender Lugo",
+        "url": "https://x.com/EsclenderL"
       }
     ]
   },
@@ -135,7 +140,42 @@
       "profile": "profile",
       "on": "on",
       "copy": "Copy",
-      "copied": "Copied!"
+      "copied": "Copied!",
+      "present": "Present",
+      "summary": "Summary",
+      "responsibilities": "Responsibilities",
+      "achievements": "Achievements",
+      "showMore": "Show more",
+      "showLess": "Show less",
+      "technologiesUsed": "Technologies used",
+      "viewOnGitHub": "View repository on GitHub",
+      "visitProfileOnNetwork": "Visit {name} profile on {network}",
+      "pressToOpenCommandPalette": "Press Cmd + K to open the command palette.",
+      "searchCommand": "Search Command",
+      "downloadCV": "Download CV",
+      "changingLanguage": "Changing language...",
+      "redirecting": "Redirecting...",
+      "spanishVersion": "Spanish version"
+    },
+    "theme": {
+      "system": "System",
+      "dark": "Dark",
+      "light": "Light"
+    },
+    "languages": {
+      "en": "English",
+      "es": "Spanish"
+    },
+    "carousel": {
+      "imageCarousel": "Image carousel",
+      "clickToExpand": "Click to expand",
+      "closeModal": "Close modal",
+      "previousImage": "Previous image",
+      "nextImage": "Next image",
+      "goToImage": "Go to image",
+      "image": "Image",
+      "slide": "Slide",
+      "noDescription": "No description available for this image."
     }
   }
 } 

@@ -49,18 +49,19 @@ const profilesInfo = profiles.map(({ network, url }) => {
 
 	return {
 		id: network,
-		section: "Social",
-		title: `Visitar ${network}`,
+    section: "Social",
+    title: `${Astro.locals.translation.ui.common.visit} ${network}`,
 		url,
 		icon,
-		hotkey: `ctrl+${firstLetter}`,
+		// Store the hotkey pattern but don't include it in the initial data
+		_hotkeyPattern: `ctrl+${firstLetter}`,
 	};
 });
 ---
 
 <footer id="normal-footer" class="no-print flex flex-col gap-2">
 	<div>
-		Press <kbd>Cmd</kbd> + <kbd>K</kbd> to open the command palette.
+    {Astro.locals.translation.ui.common.pressToOpenCommandPalette}
 	</div>
 </footer>
 
@@ -71,7 +72,7 @@ const profilesInfo = profiles.map(({ network, url }) => {
 	</svg>
 </div>
 
-<div id="hotkeypad" data-placeholder="Search Command" data-info={JSON.stringify(profilesInfo)}></div>
+<div id="hotkeypad" data-placeholder={Astro.locals.translation.ui.common.searchCommand} data-info={JSON.stringify(profilesInfo)}></div>
 
 <script>
 	interface Info {
@@ -80,36 +81,49 @@ const profilesInfo = profiles.map(({ network, url }) => {
 		title: string;
 		url: string;
 		icon: string;
-		hotkey: string;
+		_hotkeyPattern?: string;
+		hotkey?: string;
 		handler?: () => void;
 	}
 
 	import HotKeyPad from "hotkeypad";
 
+	// Function to detect if we're on a mobile device
+	function isMobile() {
+		return window.innerWidth <= 600;
+	}
+
 	const hotkeypad = new HotKeyPad();
 	const info = hotkeypad.instance.getAttribute("data-info") ?? "[]";
 	const parsedInfo = JSON.parse(info) as Info[];
 
-	const data = parsedInfo.map(({ url, hotkey, icon, id, section, title }) => {
-		return {
+	const data = parsedInfo.map(({ url, _hotkeyPattern, icon, id, section, title }: any) => {
+		const command: any = {
 			id,
 			title,
 			icon,
-			hotkey,
 			section,
 			handler: () => {
 				window.open(url, "_blank");
 			},
 		};
+		
+		// Only add hotkey on desktop
+		if (!isMobile() && _hotkeyPattern) {
+			command.hotkey = _hotkeyPattern;
+		}
+		
+		return command;
 	});
-	hotkeypad.setCommands([
+
+	// Create commands array with conditional hotkey display
+	const commands = [
 		{
 			id: "print",
-			title: "Descargar CV",
+			title: document.querySelector('#normal-footer')?.textContent?.includes('Descargar') ? 'Descargar CV' : 'Download CV',
 			icon: `<svg style="margin-right: 8px" width="16" height="16" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
   <path stroke-linecap="round" stroke-linejoin="round" d="M6.72 13.829c-.24.03-.48.062-.72.096m.72-.096a42.415 42.415 0 0 1 10.56 0m-10.56 0L6.34 18m10.94-4.171c.24.03.48.062.72.096m-.72-.096L17.66 18m0 0 .229 2.523a1.125 1.125 0 0 1-1.12 1.227H7.231c-.662 0-1.18-.568-1.12-1.227L6.34 18m11.318 0h1.091A2.25 2.25 0 0 0 21 15.75V9.456c0-1.081-.768-2.015-1.837-2.175a48.055 48.055 0 0 0-1.913-.247M6.34 18H5.25A2.25 2.25 0 0 1 3 15.75V9.456c0-1.081.768-2.015 1.837-2.175a48.041 48.041 0 0 1 1.913-.247m10.5 0a48.536 48.536 0 0 0-10.5 0m10.5 0V3.375c0-.621-.504-1.125-1.125-1.125h-8.25c-.621 0-1.125.504-1.125 1.125v3.659M18 10.5h.008v.008H18V10.5Zm-3 0h.008v.008H15V10.5Z" />
 </svg>`,
-			hotkey: "ctrl+P",
 			section: "Actions",
 			handler: () => {
 				const link = document.createElement('a');
@@ -119,24 +133,111 @@ const profilesInfo = profiles.map(({ network, url }) => {
 			},
 		},
 		...data,
-	]);
+	];
 
-	const footerButtons = document.querySelectorAll(".footer-button");
-	footerButtons.forEach((button) => {
-		button.addEventListener("click", () => {
-			var event = new KeyboardEvent("keydown", {
-				key: "K",
-				code: "KeyK",
-				keyCode: 75,
-				which: 75,
-				ctrlKey: true,
-				altKey: false,
-				shiftKey: false,
-				metaKey: false,
+	// Only add hotkey to print command on desktop
+	if (!isMobile()) {
+		commands[0].hotkey = "ctrl+P";
+	}
+
+	hotkeypad.setCommands(commands);
+
+	// Handle window resize to update commands when switching between mobile/desktop
+	let currentMobileState = isMobile();
+	window.addEventListener('resize', () => {
+		const newMobileState = isMobile();
+		if (newMobileState !== currentMobileState) {
+			currentMobileState = newMobileState;
+			
+			// Recreate commands with updated hotkey visibility
+			const updatedData = parsedInfo.map(({ url, _hotkeyPattern, icon, id, section, title }: any) => {
+				const command: any = {
+					id,
+					title,
+					icon,
+					section,
+					handler: () => {
+						window.open(url, "_blank");
+					},
+				};
+				
+				// Only add hotkey on desktop
+				if (!currentMobileState && _hotkeyPattern) {
+					command.hotkey = _hotkeyPattern;
+				}
+				
+				return command;
 			});
-			document.dispatchEvent(event);
-		});
+
+			const updatedCommands = [
+				{
+					id: "print",
+					title: document.querySelector('#normal-footer')?.textContent?.includes('Descargar') ? 'Descargar CV' : 'Download CV',
+					icon: `<svg style="margin-right: 8px" width="16" height="16" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M6.72 13.829c-.24.03-.48.062-.72.096m.72-.096a42.415 42.415 0 0 1 10.56 0m-10.56 0L6.34 18m10.94-4.171c.24.03.48.062.72.096m-.72-.096L17.66 18m0 0 .229 2.523a1.125 1.125 0 0 1-1.12 1.227H7.231c-.662 0-1.18-.568-1.12-1.227L6.34 18m11.318 0h1.091A2.25 2.25 0 0 0 21 15.75V9.456c0-1.081-.768-2.015-1.837-2.175a48.055 48.055 0 0 0-1.913-.247M6.34 18H5.25A2.25 2.25 0 0 1 3 15.75V9.456c0-1.081.768-2.015 1.837-2.175a48.041 48.041 0 0 1 1.913-.247m10.5 0a48.536 48.536 0 0 0-10.5 0m10.5 0V3.375c0-.621-.504-1.125-1.125-1.125h-8.25c-.621 0-1.125.504-1.125 1.125v3.659M18 10.5h.008v.008H18V10.5Zm-3 0h.008v.008H15V10.5Z" />
+</svg>`,
+					section: "Actions",
+					handler: () => {
+						const link = document.createElement('a');
+						link.href = '/public/Esclender-Lugo_CV_2024.es.pdf';
+						link.download = '/public/Esclender-Lugo_CV_2024.es.pdf';
+						link.click();
+					},
+				},
+				...updatedData,
+			];
+
+			// Only add hotkey to print command on desktop
+			if (!currentMobileState) {
+				updatedCommands[0].hotkey = "ctrl+P";
+			}
+
+			hotkeypad.setCommands(updatedCommands);
+		}
 	});
+
+	// Function to set up footer button event listeners
+	function setupFooterButtons() {
+		const footerButtons = document.querySelectorAll(".footer-button");
+		console.log('Found footer buttons:', footerButtons.length);
+		
+		footerButtons.forEach((button, index) => {
+			console.log(`Setting up footer button ${index}:`, button);
+			
+			// Remove any existing event listeners by cloning the button
+			const newButton = button.cloneNode(true) as HTMLElement;
+			button.parentNode?.replaceChild(newButton, button);
+			
+			// Create the click handler function
+			const clickHandler = () => {
+				console.log('Footer button clicked!');
+				var event = new KeyboardEvent("keydown", {
+					key: "K",
+					code: "KeyK",
+					keyCode: 75,
+					which: 75,
+					ctrlKey: true,
+					altKey: false,
+					shiftKey: false,
+					metaKey: false,
+				});
+				document.dispatchEvent(event);
+			};
+			
+			// Add the event listener to the new button
+			newButton.addEventListener("click", clickHandler);
+		});
+	}
+
+	// Set up footer buttons when DOM is ready
+	if (document.readyState === 'loading') {
+		document.addEventListener('DOMContentLoaded', setupFooterButtons);
+	} else {
+		setupFooterButtons();
+	}
+
+	// Also set up footer buttons after a short delay to ensure they're rendered
+	setTimeout(setupFooterButtons, 100);
 </script>
 
 <style>

@@ -1,10 +1,22 @@
-<svg
+---
+interface Props {
+  class?: string;
+}
+
+const { class: className = "" } = Astro.props;
+---
+
+<svg 
+  xmlns="http://www.w3.org/2000/svg" 
+  shape-rendering="geometricPrecision" 
+  text-rendering="geometricPrecision" 
+  image-rendering="optimizeQuality" 
+  fill-rule="evenodd" 
   width="16"
-  height="16"
-  viewBox="0 0 24 24"
-  xmlns="http://www.w3.org/2000/svg"
-  ><title>X</title><path
-    fill="currentColor"
-    d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"
-  ></path></svg
+  clip-rule="evenodd" 
+  viewBox="0 0 512 462.799" 
+  fill="currentColor" 
+  class={className}
 >
+  <path fill-rule="nonzero" d="M403.229 0h78.506L310.219 196.04 512 462.799H354.002L230.261 301.007 88.669 462.799h-78.56l183.455-209.683L0 0h161.999l111.856 147.88L403.229 0zm-27.556 415.805h43.505L138.363 44.527h-46.68l283.99 371.278z"/>
+</svg>

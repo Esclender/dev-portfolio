@@ -25,6 +25,11 @@
         "network": "GitHub",
         "username": "Esclender",
         "url": "https://github.com/Esclender"
+      },
+      {
+        "network": "X",
+        "username": "Esclender",
+        "url": "https://github.com/Esclender"
       }
     ]
   },
@@ -108,7 +113,42 @@
   "references": [
   ],
   "projects": [
-    
+    {
+      "name": "E-Commerce API Platform",
+      "description": "A comprehensive RESTful API for an e-commerce platform built with Node.js and Express. Features include user authentication, product management, order processing, and payment integration.",
+      "isActive": true,
+      "url": "https://ecommerce-api-demo.esclenderlugo.lat",
+      "github": "https://github.com/Esclender/ecommerce-api",
+      "images": [
+        {
+          "src": "/esclender_avatar.jpeg",
+          "alt": "E-Commerce API Dashboard",
+          "description": "Main dashboard showing product management interface with real-time analytics and user statistics."
+        },
+        {
+          "src": "/me_avatar.jpg",
+          "alt": "API Documentation",
+          "description": "Swagger documentation interface displaying RESTful API endpoints with interactive testing capabilities."
+        },
+        {
+          "src": "/me_avatar.jpg",
+          "alt": "API Documentation",
+          "description": "Swagger documentation interface displaying RESTful API endpoints with interactive testing capabilities."
+        },
+        {
+          "src": "/me_avatar.jpg",
+          "alt": "API Documentation",
+          "description": "Swagger documentation interface displaying RESTful API endpoints with interactive testing capabilities."
+        }
+      ],
+      "highlights": [
+        "Implemented JWT-based authentication with role-based access control",
+        "Integrated Stripe payment gateway for secure transactions",
+        "Built with microservices architecture for scalability",
+        "Added comprehensive API documentation using Swagger",
+        "Implemented automated testing with Jest and Supertest"
+      ]
+    }
   ],
   "customSections": [
     {
